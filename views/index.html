@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">       
+        <title>Online Booking</title>
+    
+        <!-- Font & icons files -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+	    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+<body ng-app="app">
+    
+    <!-- Navbar section -->
+    
+    <div>
+        <div ng-include="'/partials/navbar.html'"></div>
+    </div>
+    
+    <!-- Main UI view of the app -->
+    <div ui-view ></div>
+    
+    <!-- Footer section -->
+    
+    <div>
+        <div ng-include="'/partials/footer.html'"></div>
+    </div>
+
+    
+    <!-- Angular JS Scipts -->
+    
+    <script src="/lib/bower_components/angular/angular.min.js"></script>
+    <script src="/lib/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    
+    <!-- Controllers and app.js -->
+    
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/homeController.js"></script>
+    <script src="/js/controllers/contactController.js"></script>
+    
+    <!-- Services -->
+    
+    <script src="/js/services/NetworkService.js"></script>
+    <script src="/js/services/DataSharing.js"></script>
+
+</body>
+</html>
